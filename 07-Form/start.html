@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Lezione HTML</title>
+	<style>
+		label {
+			display: block
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Traccia <span style="color: brown;">esercizio 7</span>:</h1>
+	<p>Crea un form di anagrafica per la registrazione ad un piattaforma. <br>
+		Il form deve contenere i seguenti campi: <br>
+		- Email/Password/Nome e Cognome/Data di nascita/Numero di telefono <br>
+		- Selettore con scelta di un piano di abbonamento. <br>
+		- Un piano free/Un gruppo di massimo 3 piani con prezzo crescente <br>
+		- Un campo per scegliere se aggiungere o meno i vantaggi PRO <br>
+		- Campi per inserimento carta di scredito: Numero carta/CVC/Scadenza <br>
+		- Indirizzo di fatturazione</p>
+	<hr>
+	<form action="" method="post">
+		<h1>Registrati alla piattaforma</h1>
+		<p>I campi contrassegnati da <strong><abbr title="required">*</abbr></strong> sono obbligatori</p>
+		<div>
+			<label for="form-email">Email<strong><abbr title="required">*</abbr></strong></label>
+			<input type="email" id="form-email" name="email" required />
+			<label for="form-pass">Password<strong><abbr title="required">*</abbr></strong></label>
+			<input type="password" id="form-pass" name="pass" required />
+		</div>
+		<div>
+			<label for="form-name">Nome e cognome<strong><abbr title="required">*</abbr></strong></label>
+			<input type="text" id="form-name" name="name" required />
+			<label for="form-dob">Data di nascita<strong><abbr title="required">*</abbr></strong></label>
+			<input type="date" id="form-dob" name="dob" required />
+			<label for="form-tel">Numero di telefono<strong><abbr title="required">*</abbr></strong></label>
+			<input type="tel" id="form-tel" name="tel" required />
+		</div>
+		<div>
+			<label for="form-plan">Piano di abbonamento <strong><abbr title="required">*</abbr></strong></label>
+			<select id="form-plan" name="plan" required>
+				<option value="0">Free</option>
+				<optgroup label="Mensili">
+					<option value="1m">1 Mese €20 </option>
+					<option value="6m">6 Mesi €50</option>
+					<option value="1a">1 Anno €70</option>
+				</optgroup>
+			</select>
+			<label for="form-pro">Vantaggi PRO</label>
+			<input type="checkbox" id="form-pro" name="pro" />
+		</div>
+		<div>
+			<label for="form-cc">Numero Carta<strong><abbr title="required">*</abbr></strong></label>
+			<input id="form-cc" name="cc" type="number" inputmode="numeric" minlength="13" maxlength="19"
+				placeholder="0000 0000 0000 0000" required />
+			<label for="form-cvc">CVC<strong><abbr title="required">*</abbr></strong></label>
+			<input id="form-cvc" name="cvc" type="number" inputmode="numeric" minlength="3" maxlength="3"
+				placeholder="123" required />
+			<label for="form-exp">Scadenza<strong><abbr title="required">*</abbr></strong></label>
+			<input id="form-exp" name="exp" type="date" required />
+			<label for="form-address">Indirizzo di fatturazione<strong><abbr title="required">*</abbr></strong></label>
+			<input type="text" id="form-address" name="address" required />
+		</div>
+		<button type="submit">Registrati</button>
+	</form>
+
+</body>
+
+</html>
