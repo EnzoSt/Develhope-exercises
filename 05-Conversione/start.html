@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML</title>
+    <style>
+        img {
+            max-width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Traccia <span style="color: brown;">esercizio 5</span>:</h1>
+    <p>Converti le immagini di questa pagina per supportare un formato di fallback in caso webp non sia supportato</p>
+    <picture>
+        <source src="assets/ok-hand.webp" type="image/webp">
+        <img src="assets/ok-hand.jpg" alt="Immagine 2">
+    </picture>
+    <picture>
+        <source srcset="assets/business-man.webp" type="image/webp">
+        <img src="assets/business-man.jpg" alt="Immagine1">
+    </picture>
+</body>
+
+</html>
