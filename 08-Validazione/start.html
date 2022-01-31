@@ -52,10 +52,10 @@
 		</div>
 		<div>
 			<label for="form-cc">Numero Carta<strong><abbr title="required">*</abbr></strong></label>
-			<input id="form-cc" name="cc" type="number" inputmode="numeric" minlength="13" maxlength="19"
+			<input id="form-cc" name="cc" type="number" pattern="[0-9]+" inputmode="numeric" minlength="13" maxlength="16"
 				placeholder="9999 9999 9999 9999" required />
 			<label for="form-cvc">CVC<strong><abbr title="required">*</abbr></strong></label>
-			<input id="form-cvc" name="cvc" type="number" inputmode="numeric" minlength="3" maxlength="3"
+			<input id="form-cvc" name="cvc" type="number" pattern="[0-9]+" inputmode="numeric" minlength="3" maxlength="3"
 				placeholder="123" required />
 			<label for="form-exp">Scadenza<strong><abbr title="required">*</abbr></strong></label>
 			<input id="form-exp" name="exp" type="date" required />
