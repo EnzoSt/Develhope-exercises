@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML</title>
+    <style>
+        label {
+            display: block
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Traccia <span style="color: brown;">esercizio 6</span>:</h1>
+    <p>Aggiungi alla pagina: <br>
+        - Un pulsante disabilitato <br>
+        - Un input numerico, con relativa label, nel range 0-100 e con step di 2 <br>
+        - Una checkbox con relativa label <br>
+        - Un input per date con una proprietà custom <br>
+
+        La checkbox deve essere già selezionata all'apertura della pagina. <br>
+        L'input numerico deve avere il focus all'apertura della pagina.</p>
+    <hr>
+    <form action="#">
+        <label for="step2"><strong>Due a due</strong></label>
+        <input type="number" id="step2" min="0" max="100" step="2" autofocus />
+        <label for="check">Check</label>
+        <input type="checkbox" id="check" checked />
+        <label for="date">Prenota</label>
+        <input id="date" name="data" type="date" min="2022-01-24" max="2022-01-30" required />
+        <button type="button" disabled>Clicca</button>
+    </form>
+</body>
+
+</html>
