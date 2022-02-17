@@ -66,9 +66,8 @@ a {
     padding: 0.6rem 1rem;
     border-radius: 10px;
     border: none;
-    color: rgb(214, 225, 231);
-    transition: 0.5s;
-    background: #2b2b2b;
+    color: #2b2b2b;
+    background: #979494;
     font-size: 0.8rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -76,6 +75,7 @@ a {
 }
 
 a:hover {
-    background: #2b2bb2;
+    color: #2b2bb2;
+    background: #858588;
     transition: 0.3s;
 }

@@ -12,9 +12,7 @@
 :root {
     --color-bcg: #011212;
     --item-bcg: #ff8800;
-    --item-wth: 100px;
-    --item-hht: 100px;
-    --br-rad-50: 50px;
+    --item-w-h: 100px;
 }
 
 body {
@@ -22,8 +20,8 @@ body {
 }
 
 .ball {
-    width: var(--item-wth);
-    height: var(--item-hht);
+    width: var(--item-w-h);
+    height: var(--item-w-h);
     background-color: var(--item-bcg);
-    border-radius: var(--br-rad-50);
+    border-radius: calc(var(--item-w-h) / 2);
 }
