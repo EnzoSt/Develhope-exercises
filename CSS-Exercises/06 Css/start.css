@@ -1,0 +1,46 @@
+html body {
+    width: auto; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 100vh;
+    gap: 2em;
+    margin: 0 0;
+}
+
+body section {
+    margin: 0;
+}
+
+#green {
+    grid-area: 4 / 2 / 5 / 5;
+}
+
+#orange {
+    grid-area: 2 / 2 / 3 / 5;
+}
+
+#yellow {
+    grid-area: 1 / 1 / 2 / 5;
+}
+
+#red {
+    grid-area: 3 / 2 / 4 / 5;
+}
+
+#blue {
+    grid-area: 2 / 1 / 5 / 2;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    flex-grow: 1;
+}
+
+#yellow ul li:nth-child(1){
+    flex-grow: 3;
+}
