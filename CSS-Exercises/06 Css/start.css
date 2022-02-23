@@ -29,6 +29,10 @@ ul {
     display: flex;
 }
 
+#red ul {
+    flex-direction: row-reverse;
+}
+
 li {
     flex-grow: 1;
 }
