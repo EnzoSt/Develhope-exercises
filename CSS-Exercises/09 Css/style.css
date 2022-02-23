@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div[class^="card"] {
+    width: 19em;
+    height: 27em;
+    background-color: rgb(231, 228, 228);
+    border-radius: 26px;
+    margin: 1em 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.top-section {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #7a7a7a73;
+    border-radius: 24px 24px 0 0;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    margin: 0.5em;
+    border: 1px solid rgb(194, 190, 190);
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.date {
+    font-size: 0.9em;
+}
+
+sup strong {
+    font-size: 2.5em;
+    margin-right: 0.25em;
+    cursor: pointer;
+}
+
+.cat-img img {
+    height: 13.8em;
+    width: 19em;
+    cursor: pointer;
+}
+
+.icons {
+    margin: 0.7em 0 0 1em;
+}
+
+.icons img {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    cursor: pointer;
+    margin-right: 0.4em;
+}
+
+.title p {
+    color: #fffefe;
+    text-shadow: 1px 1px 24px black;
+}
+
+.text {
+    font-size: 0.9em;
+    padding: 0.2rem 0.8rem;
+}
+
+@media screen and (min-width: 624px) and (max-width: 943px) {
+    .card-3 {
+        position: relative;
+        bottom: 1em;
+        right: 9.9em;
+    }
+}
