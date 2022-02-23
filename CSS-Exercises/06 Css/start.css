@@ -1,15 +1,8 @@
 html body {
-    width: auto; 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    height: 100vh;
-    gap: 2em;
-    margin: 0 0;
-}
-
-body section {
-    margin: 0;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4, 25%);
+    gap: 1.5em;
 }
 
 #green {
@@ -34,13 +27,12 @@ body section {
 
 ul {
     display: flex;
-    flex-wrap: wrap;
 }
 
 li {
     flex-grow: 1;
 }
 
-#yellow ul li:nth-child(1){
+#yellow ul li:nth-child(1) {
     flex-grow: 3;
 }
