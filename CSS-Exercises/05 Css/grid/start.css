@@ -1,0 +1,36 @@
+html body {
+    width: auto;
+    margin: 0 0;
+    display: grid;
+    gap: 2.5em;
+    height: 100vh;
+    grid-template-rows: repeat(3, calc(100vh / 3));
+    grid-template-areas:
+        "g g g"
+        "y o r"
+        "y b r";
+}
+
+body section {
+    margin: 0;
+}
+
+#green {
+    grid-area: g;
+}
+
+#orange {
+    grid-area: o;
+}
+
+#yellow {
+    grid-area: y;
+}
+
+#red {
+    grid-area: r;
+}
+
+#blue {
+    grid-area: b;
+}
