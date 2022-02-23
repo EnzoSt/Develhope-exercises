@@ -1,0 +1,43 @@
+:root {
+    --mrg-top: 15vw;
+}
+
+html body {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0 0;
+}
+
+body section {
+    padding: 2%;
+    flex-grow: 1;
+    margin: 0;
+}
+
+#green {
+    width: 100vw;
+    position: fixed;
+    height: 9vw;;
+}
+
+#orange {
+    margin-top: var(--mrg-top);
+}
+
+#yellow {
+    margin-top: var(--mrg-top);
+}
+
+#red {
+    margin-top: var(--mrg-top);
+    order: 1;
+}
+
+#blue {
+    margin-bottom: -3rem;
+}
