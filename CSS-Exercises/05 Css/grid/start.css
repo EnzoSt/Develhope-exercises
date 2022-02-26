@@ -1,10 +1,15 @@
+:root {
+    --gap: 2.5em;
+    --calc-hgt-gap: calc((100vh - (var(--gap) * 2)) / 3);
+}
+
 html body {
-    width: auto;
+    width: 100vw;
     margin: 0 0;
     display: grid;
-    gap: 2.5em;
+    gap: var(--gap);
     height: 100vh;
-    grid-template-rows: repeat(3, calc(100vh / 3));
+    grid-template-rows: repeat(3, var(--calc-hgt-gap));
     grid-template-areas:
         "g g g"
         "y o r"
