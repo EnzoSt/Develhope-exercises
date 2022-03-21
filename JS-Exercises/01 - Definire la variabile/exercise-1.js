@@ -1,5 +1,5 @@
 function canPlay() {
-  const personName = "Paul";
+  let personName = "Paul";
   if (true) {
     personName += " plays football"; // Argh! personName is not defined
   }
