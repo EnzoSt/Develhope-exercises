@@ -1,9 +1,11 @@
 function adultFilter(obj) {
-  if (typeof obj === `object`) {
-    return persons.filter((persons) => persons.age >= 18);
-  } else {
-    return `WARNING: Your item is not a persons's object!`;
+  const adults = [];
+  for (let i in persons) {
+    if (persons[i].age >= 18) {
+      adults.push(persons[i]);
+    }
   }
+  return adults;
 }
 
 const persons = [

@@ -1,9 +1,9 @@
 function getKeys(obj) {
-  if (typeof obj === `object`) {
-    return Object.keys(obj);
-  } else {
-    return `WARNING: Your item is not an object!`;
+  let keys = [];
+  for (let i in obj) {
+    keys.push(i);
   }
+  return keys;
 }
 
 const person = {
