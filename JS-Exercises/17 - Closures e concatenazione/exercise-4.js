@@ -2,19 +2,19 @@ function calculate() {
   let y = 0;
   return {
     add(x) {
-      y = y + x;
+      y += x;
       return this;
     },
     multiply(x) {
-      y = y * x;
+      y *= x;
       return this;
     },
     sub(x) {
-      y = y - x;
+      y -= x;
       return this;
     },
     divide(x) {
-      y = y / x;
+      y /= x;
       return this;
     },
     printResult() {
