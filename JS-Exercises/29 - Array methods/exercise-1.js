@@ -1,9 +1,5 @@
-function calculateAverageAge(persons) {
-  let agePersons = 0;
-  for (let i = 0; i < persons.length; i++) {
-    agePersons += persons[i].age;
-  }
-  return  Math.round(agePersons / persons.length);
+function adultFilter(persons) {
+  return persons.filter(person => person.age >= 18);
 }
 
 const persons = [
@@ -19,6 +15,6 @@ const persons = [
   { name: "Alice", age: 28 },
 ];
 
-const averageAge = calculateAverageAge(persons);
+const adults = adultFilter(persons);
 console.log(persons);
-console.log(averageAge);
+console.log(adults);
