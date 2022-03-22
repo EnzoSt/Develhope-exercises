@@ -1,6 +1,6 @@
 function createStore() {
   let store = [];
-  return (items) => {
+  return items => {
     store.push(items);
     console.log(store);
   };
