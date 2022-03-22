@@ -6,15 +6,12 @@
 function calculateSalary(role) {
   if (role === "ceo") {
     return "2200€";
-  } else if (role === "manager") {
-    return "1800€";
-  } else if (role === "cto") {
+  } else if (role === "manager" || role === "cto") {
     return "1800€";
   } else if (role === "developer") {
     return "1500€";
-  } else {
-    return "1000€";
   }
+  return "1000€";
 }
 
 const ceoSalary = calculateSalary("ceo");
