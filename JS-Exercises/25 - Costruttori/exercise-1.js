@@ -3,13 +3,13 @@ const person = {
     return this._firstName;
   },
   set firstName(value) {
-    this._firstName = value;
+    return this._firstName = value;
   },
   get lastName() {
     return this._lastName;
   },
   set lastName(value) {
-    this._lastName = value;
+    return this._lastName = value;
   },
   fullName() {
     return `${this.firstName} ${this.lastName}`;
