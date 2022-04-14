@@ -1,22 +1,24 @@
 <html>
-  <body>
-    <div id="container">
-      <button type="button" id="fetch-post">
-        Fetch Post from LocalStorage
-      </button>
 
-      <h2>Post: <span id="post-title"></span></h2>
-    </div>
-  </body>
+<body>
+  <div id="container">
+    <button type="button" id="fetch-post">
+      Fetch Post from LocalStorage
+    </button>
+
+    <h2>Post: <span id="post-title"></span></h2>
+  </div>
+</body>
+
 </html>
 
 <script>
-  const fetchPost = document.getElementById("fetch-post"),
-    postTitle = document.getElementById("post-title");
+const fetchPost = document.getElementById("fetch-post");
+const postTitle = document.getElementById("post-title");
 
-  fetchPost.onclick = () => {
-    fetch("https://jsonplaceholder.typicode.com/posts/1")
-      .then((response) => response.json())
-      .then((data) => postTitle.innerHTML = data.title);
-  };
+fetchPost.onclick = () => {
+  const post = localStorage.getItem("post");
+  postTitle.innerHTML = JSON.parse(post).title;
+};
+
 </script>

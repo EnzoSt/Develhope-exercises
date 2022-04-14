@@ -7,7 +7,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   info: function () {
-    return `${this.firstName} ${this.lastName}, ${this.age} - ${this.job} `;
+    return `${this.fullName()}, ${this.age} - ${this.job} `;
   },
 };
 
