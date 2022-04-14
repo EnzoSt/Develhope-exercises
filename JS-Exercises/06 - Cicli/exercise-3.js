@@ -1,6 +1,6 @@
 function adultFilter(obj) {
   const adults = [];
-  for (let person of persons) {
+  for (let person of obj) {
     if (person.age >= 18) {
       adults.push(person);
     }
