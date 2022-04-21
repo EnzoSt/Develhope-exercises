@@ -24,5 +24,5 @@ john.lastName = "Doe";
 simon.firstName = "Simon";
 simon.lastName = "Collins";
 
-console.log(john.fullName()); // John Doe
+console.log(john.fullName());  // John Doe
 console.log(simon.fullName()); // Simon Collins
