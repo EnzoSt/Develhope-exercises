@@ -24,6 +24,7 @@ function fetchPersonById(id) {
     setTimeout(() => {
       resolve(persons.find((item) => item.id === id));
     }, 1000);
+    reject(new Error("Person not found"));
   });
 }
 

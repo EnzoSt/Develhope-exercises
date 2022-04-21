@@ -5,6 +5,10 @@ const person = {
   age: 25,
 };
 
-const json = JSON.stringify(person, ["id", "age"]);
+const json = JSON.stringify(
+  Object.fromEntries(
+    Object.entries(person).filter(([key, value]) => typeof value === "number")
+  )
+);
 
 console.log(json); // Should return: { id: 1, age: 25 }
