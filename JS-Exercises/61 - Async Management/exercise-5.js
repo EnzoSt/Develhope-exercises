@@ -62,7 +62,7 @@ function fetchJobById(id) {
   });
 }
 
-Promise.any([fetchPersonById(2), fetchJobById(3)])
+Promise.race([fetchPersonById(2), fetchJobById(3)])
   .then((result) => console.log(result))
   .catch((error) => console.log(error));
 

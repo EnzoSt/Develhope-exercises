@@ -10,14 +10,14 @@ class Person {
   }
 
   set firstName(value) {
-    return (this._firstName = value);
+    this._firstName = value;
   }
   get lastName() {
     return this._lastName;
   }
 
   set lastName(value) {
-    return (this._lastName = value);
+    this._lastName = value;
   }
 
   get fullName() {
